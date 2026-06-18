@@ -1,61 +1,40 @@
-export type Category = {
+// Definição da interface para garantir tipagem
+interface Category {
   id: string;
   label: string;
   photos: string[];
+}
+
+/**
+ * Função utilitária para importar fotos de uma pasta específica
+ */
+const importPhotos = (folder: string): string[] => {
+  const modules = import.meta.glob("../assets/**/*.{png,jpeg,jpg}", {
+    eager: true,
+    import: "default",
+  });
+
+  // Filtra apenas os arquivos da pasta desejada
+  return Object.entries(modules)
+    .filter(([path]) => path.includes(`../assets/${folder}/`))
+    .map(([, value]) => value as string);
 };
 
-const createCategory = (
-  id: string,
-  label: string,
-  photos: string[]
-): Category => ({
-  id,
-  label,
-  photos: photos.map((photo) => `/${id}/${photo}`),
-});
-
+// Construção das categorias
 export const categories: Category[] = [
-  createCategory("casamentos", "Casamentos", [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.jpeg",
-    "6.jpeg",
-    "7.jpeg",
-    "8.jpeg",
-    "9.jpeg",
-    "10.jpeg",
-    "11.jpeg",
-    "12.jpeg",
-    "13.jpeg",
-    "14.jpeg",
-    "15.jpeg",
-    "16.jpeg",
-  ]),
-
-  createCategory("feminino", "Ensaio Feminino", [
-    "1.jpeg",
-    "2.jpeg",
-    "3.jpeg",
-    "4.jpeg",
-    "5.jpeg",
-    "6.jpeg",
-    "7.png",
-    "8.png",
-    "9.png",
-    "10.png",
-  ]),
-
-  createCategory("familia", "Ensaio Família", [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.jpeg",
-    "5.jpeg",
-    "6.png",
-    "7.png",
-    "8.png",
-    "9.png",
-  ]),
+  {
+    id: "casamentos",
+    label: "Casamentos",
+    photos: importPhotos("casamentos"),
+  },
+  {
+    id: "feminino",
+    label: "Ensaio Feminino",
+    photos: importPhotos("feminino"),
+  },
+  {
+    id: "familia",
+    label: "Ensaio Família",
+    photos: importPhotos("familia"),
+  },
 ];
