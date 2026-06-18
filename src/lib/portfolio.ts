@@ -11,7 +11,7 @@ const createCategory = (
 ): Category => ({
   id,
   label,
-  photos: photos.map((photo) => `/assets/${id}/${photo}`),
+ photos: photos.map((photo) => `/${id}/${photo}`)
 });
 
 export const categories: Category[] = [
