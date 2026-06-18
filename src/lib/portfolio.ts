@@ -11,12 +11,12 @@ const createCategory = (
 ): Category => ({
   id,
   label,
- photos: photos.map((photo) => `/${id}/${photo}`)
+  photos: photos.map((photo) => `/${id}/${photo}`),
 });
 
 export const categories: Category[] = [
   createCategory("casamentos", "Casamentos", [
-     "1.png",
+    "1.png",
     "2.png",
     "3.png",
     "4.png",
@@ -32,9 +32,6 @@ export const categories: Category[] = [
     "14.jpeg",
     "15.jpeg",
     "16.jpeg",
-        "16.jpeg",
- 
-   
   ]),
 
   createCategory("feminino", "Ensaio Feminino", [
@@ -50,8 +47,6 @@ export const categories: Category[] = [
     "10.png",
   ]),
 
-
-
   createCategory("familia", "Ensaio Família", [
     "1.png",
     "2.png",
@@ -60,7 +55,7 @@ export const categories: Category[] = [
     "5.jpeg",
     "6.png",
     "7.png",
-     "8.png",
-   "9.png",
+    "8.png",
+    "9.png",
   ]),
 ];
