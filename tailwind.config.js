@@ -13,7 +13,7 @@ export default {
       colors: {
         // Adiciona a classe 'text-signature-color'
         'signature-color': '#A68979',
-        'signature-color': '#7a6458',
+       
       },
     },
   },
