@@ -22,6 +22,21 @@ const reviews = [
     text: "Profissional maravilhosa",
     rating: 5,
   },
+   {
+    name: "Carol Lopes",
+    text: "Profissional que nos deixa a vontade e nos conduz com delicadeza. Mto satisfeita com o trabalho dela.",
+    rating: 5,
+  },
+    {
+    name: "Engenharia bluend",
+    text: "As fotos ficaram lindas, adorei!",
+    rating: 5,
+  },
+      {
+    name: "Simone Vargas",
+    text: "Maravilhosa, profissional e super querida!!! Amei as fotos do meu casamento ❤️",
+    rating: 5,
+  },
 ];
 
 function initials(name: string) {
