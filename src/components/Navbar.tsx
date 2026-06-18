@@ -31,7 +31,7 @@ export function Navbar() {
   href="#top" 
  className="font-signature text-2xl md:text-2xl text-signature-color drop-shadow-md tracking-wide"
 >
-  Diovana Lima
+  Diovana Lima 
 </a>
         <ul className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.18em]">
           {links.map((l) => (
