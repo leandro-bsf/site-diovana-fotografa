@@ -29,7 +29,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 <a 
   href="#top" 
-  className="!font-signature text-2xl md:text-2xl !text-signature-color drop-shadow-md tracking-wide"
+ className="font-signature text-2xl md:text-2xl text-signature-color drop-shadow-md tracking-wide"
 >
   Diovana Lima
 </a>
