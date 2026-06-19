@@ -5,7 +5,6 @@ export default function Bio() {
     <div
       className="min-h-screen flex items-center justify-center p-6"
       style={{
-        // Gradiente com base em dourado/champanhe
         backgroundImage:
           "linear-gradient(rgba(119, 87, 28, 0.7), rgba(197, 160, 89, 0.7)), url('/images/banner-casamento.jpg')",
         backgroundSize: "cover",
@@ -16,14 +15,14 @@ export default function Bio() {
         <img
           src={profile}
           alt="Diovana Lima"
-          // Borda dourada
-          className="w-32 h-32 rounded-full mx-auto border-4 border-[#C5A059] object-cover shadow-xl"
+          className="w-32 h-32 rounded-full mx-auto border-4 border-[#7a4e1d] object-cover shadow-xl transition-all duration-300 hover:scale-105"
         />
 
-        <h1 className="mt-5 text-[#FDFBF7] text-3xl font-light tracking-wider">
-          Diovana Lima
-        </h1>
-
+<a
+  className="font-[Great_Vibes] text-2xl md:text-5xl text-black tracking-wide"
+>
+  Diovana Lima
+</a>
         <p className="text-[#FDFBF7]/90 mt-2 text-sm uppercase tracking-[0.2em]">
           Fotografia
         </p>
@@ -38,7 +37,7 @@ export default function Bio() {
             <a
               key={item.label}
               href={item.href}
-              className="py-3 px-6 rounded-full border border-[#C5A059] text-[#FDFBF7] hover:bg-[#C5A059] hover:text-white transition-all duration-300"
+              className="py-3 px-6 rounded-full border border-[#7a4e1d] text-[#FDFBF7] hover:bg-[#7a4e1d] hover:text-white transition-all duration-300"
             >
               {item.label}
             </a>
@@ -47,7 +46,7 @@ export default function Bio() {
           <a
             href="https://wa.me/554691321472?text=Olá, Diovana! Vim através do seu site e gostaria de saber mais sobre seus ensaios fotográficos."
             target="_blank"
-            className="py-3 px-6 rounded-full bg-[#C5A059] text-white font-semibold hover:bg-[#b08d4b] transition-all duration-300 shadow-lg"
+            className="py-3 px-6 rounded-full bg-[#7a4e1d] text-white font-semibold hover:bg-[#5c3714] transition-all duration-300 shadow-lg"
           >
             WhatsApp
           </a>
