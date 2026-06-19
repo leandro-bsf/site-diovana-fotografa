@@ -31,8 +31,8 @@ export default function Bio() {
           {[
             { label: "Sobre Mim", href: "https://www.diovanalimafotografia.com.br/#sobre" },
             { label: "Portfólio", href: "https://www.diovanalimafotografia.com.br/#portfolio" },
-            { label: "Avaliações", href: "https://www.diovanalimafotografia.com.br/#avaliacoes" },
-            { label: "Contato", href: "https://www.diovanalimafotografia.com.br/#contato" },
+            { label: "Avaliações", href: "https://www.diovanalimafotografia.com.br/#avaliacoes" }
+         
           ].map((item) => (
             <a
               key={item.label}
