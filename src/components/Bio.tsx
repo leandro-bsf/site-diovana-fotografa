@@ -7,7 +7,7 @@ export default function Bio() {
       style={{
         // Gradiente com base em dourado/champanhe
         backgroundImage:
-          "linear-gradient(rgba(197, 160, 89, 0.7), rgba(197, 160, 89, 0.7)), url('/images/banner-casamento.jpg')",
+          "linear-gradient(rgba(119, 87, 28, 0.7), rgba(197, 160, 89, 0.7)), url('/images/banner-casamento.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
