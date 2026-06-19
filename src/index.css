@@ -118,3 +118,38 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+.bio-btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  display: block;
+}
+
+.bio-btn:hover {
+  background: white;
+  color: black;
+}
+
+.bio-btn-primary {
+  background: white;
+  color: black;
+  padding: 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.bio-btn-primary:hover {
+  transform: scale(1.03);
+}

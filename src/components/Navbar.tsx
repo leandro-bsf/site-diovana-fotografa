@@ -5,6 +5,7 @@ const links = [
   { href: "#portfolio", label: "Portfólio" },
   { href: "#avaliacoes", label: "Avaliações" },
   { href: "#contato", label: "Contato" },
+
 ];
 
 export function Navbar() {

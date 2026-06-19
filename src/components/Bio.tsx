@@ -1,0 +1,58 @@
+import profile from "/assets/diovana.jpeg";
+
+export default function Bio() {
+  return (
+    <div
+      className="min-h-screen flex items-center justify-center p-6"
+      style={{
+        // Gradiente com base em dourado/champanhe
+        backgroundImage:
+          "linear-gradient(rgba(197, 160, 89, 0.7), rgba(197, 160, 89, 0.7)), url('/images/banner-casamento.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="w-full max-w-md text-center">
+        <img
+          src={profile}
+          alt="Diovana Lima"
+          // Borda dourada
+          className="w-32 h-32 rounded-full mx-auto border-4 border-[#C5A059] object-cover shadow-xl"
+        />
+
+        <h1 className="mt-5 text-[#FDFBF7] text-3xl font-light tracking-wider">
+          Diovana Lima
+        </h1>
+
+        <p className="text-[#FDFBF7]/90 mt-2 text-sm uppercase tracking-[0.2em]">
+          Fotografia
+        </p>
+
+        <div className="mt-8 flex flex-col gap-4">
+          {[
+            { label: "Sobre Mim", href: "https://www.diovanalimafotografia.com.br/#sobre" },
+            { label: "Portfólio", href: "https://www.diovanalimafotografia.com.br/#portfolio" },
+            { label: "Avaliações", href: "https://www.diovanalimafotografia.com.br/#avaliacoes" },
+            { label: "Contato", href: "https://www.diovanalimafotografia.com.br/#contato" },
+          ].map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="py-3 px-6 rounded-full border border-[#C5A059] text-[#FDFBF7] hover:bg-[#C5A059] hover:text-white transition-all duration-300"
+            >
+              {item.label}
+            </a>
+          ))}
+
+          <a
+            href="https://wa.me/554691321472?text=Olá, Diovana! Vim através do seu site e gostaria de saber mais sobre seus ensaios fotográficos."
+            target="_blank"
+            className="py-3 px-6 rounded-full bg-[#C5A059] text-white font-semibold hover:bg-[#b08d4b] transition-all duration-300 shadow-lg"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
