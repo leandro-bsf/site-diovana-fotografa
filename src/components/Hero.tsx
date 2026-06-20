@@ -22,15 +22,14 @@ export function Hero() {
         >
           Fotografia Autoral
         </motion.p>
-      <motion.h1
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, delay: 0.4 }}
-        // Substitua 'font-display' por 'font-signature'
-        className="font-signature text-5xl md:text-7xl lg:text-8xl leading-[1.05] max-w-4xl"
-      >
-        Momentos que <em className="italic">permanecem</em> para sempre
-      </motion.h1>
+     <motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.2, delay: 0.4 }}
+  className="font-signature !text-white text-5xl md:text-7xl lg:text-8xl leading-[1.05] max-w-4xl"
+>
+  Momentos que <em className="italic">permanecem</em> para sempre
+</motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
