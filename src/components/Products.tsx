@@ -10,7 +10,7 @@ import {
 
 // Carrega automaticamente imagens das pastas de produtos
 const images = import.meta.glob(
-  "../assets/produtos/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}",
+  "../assets/produtos/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP,jfif}",
   {
     eager: true,
     import: "default",
@@ -37,48 +37,177 @@ const products = [
   {
     folder: "produto1",
     category: "Álbuns",
-    title: "Álbum Premium",
+    title: "Albun Dreambook - Tecido",
     description:
-      "Álbum fotográfico de alta qualidade com acabamento premium para eternizar seus momentos.",
-    price: "A partir de R$ 690,00",
+      "Este álbum apresenta capa e estojo revestidos em tecido especial Dream Dourado, acompanhando placa com gravação a laser e sendo composto por até 45 lâminas (equivalentes a 90 páginas) em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão branco entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
+    price: "A partir de R$ 500,00",
   },
 
 
   {
     folder: "produto2",
     category: "Álbuns",
-    title: "Álbum Luxo",
+    title: "Albun Dreambook - Foto",
     description:
-      "Um álbum sofisticado com acabamento exclusivo e materiais de alta durabilidade.",
-    price: "A partir de R$ 990,00",
+      "Este modelo inclui estojo com base em tecido especial Dream Dourado e tampa fotográfica, apresentando álbum com capa frontal fotográfica e dorso/verso em tecido especial Dream Dourado, composto por até 45 lâminas (90 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão branco entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
+    price: "A partir de R$ 400,00",
   },
 
 
   {
     folder: "produto3",
-    category: "Caixas",
-    title: "Caixa Personalizada",
+    category: "Álbuns",
+    title: "Álbum Almofadado",
     description:
-      "Caixa personalizada para guardar fotografias e lembranças especiais.",
+      "Este modelo possui capa 100% fotográfica almofadada e é composto por até 45 lâminas (equivalentes a 90 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão branco entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
     price: "A partir de R$ 250,00",
   },
 
 
   {
     folder: "produto4",
-    category: "Quadros",
-    title: "Quadro Decorativo",
+    category: "Personalizados",
+    title: "Caneca Personalizada",
     description:
-      "Transforme suas fotos favoritas em peças únicas para decorar seu ambiente.",
+      "Caneca Porcelana Personalizada 325ml",
     price: "A partir de R$ 180,00",
   },
+  
+  {
+    folder: "produto5",
+    category: "Personalizados",
+    title: "Camiseta Personalizada Poliester",
+    description:
+      "Camiseta Personalizada 100% Poliester , use sua criatividade, presenteie quem você ama!! Camisetas estampadas com Foto : R$ 39,90 Camisetas Somente Texto : R$ 43,00 , Tamanhos para toda a família: Infantil: 4 ao 14 - Adulto: P ao XG",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto6",
+    category: "Personalizados",
+    title: "Banner Pró sem trama",
+    description:
+      "Banner Pró sem trama ",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto7",
+    category: "Álbuns",
+    title: "Álbum Econômico",
+    description:
+      "Este modelo possui capa 100% fotográfica com estrutura interna em cartão de 2 mm e é composto por até 18 lâminas (equivalentes a 36 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão cinza entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto8",
+    category: "Álbuns",
+    title: "Albun Kit Econômico",
+    description:
+      "Este álbum, que já inclui estojo revestido em courino disponível em quatro cores exclusivas, apresenta capa 100% fotográfica com estrutura interna em cartão de 2 mm e é composto por até 18 lâminas (equivalentes a 36 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão cinza entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto9",
+    category: "Álbuns",
+    title: "Albun Premium Bordado",
+    description:
+      "Este modelo possui capa com estrutura interna em MDF de 3 mm, revestimento em courino ou tecido com gravação em bordado, e é composto por até 45 lâminas (equivalentes a 90 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão branco entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto10",
+    category: "Álbuns",
+    title: "Albun Rebit Personalizado - 80 Fotos",
+    description:
+      "Álbum com capacidade fixa com rebites. Capa impressa, folhas em plástico cristal.",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto11",
+    category: "Álbuns",
+    title: "Albun Instalivro Sintético 10x15",
+    description:
+      "Dupla face ja incluso Laser o personalizado adicional de R$ 20,00",
+    price: "A partir de R$ 180,00",
+  },
+  
+  {
+    folder: "produto11",
+    category: "Álbuns",
+    title: "Instalivro  Instalivro  Sintético 15x21",
+    description:
+      "Dupla face ja incluso Laser o personalizado adicional de R$ 20,00, consulta cores",
+    price: "A partir de R$ 180,00",
+  },
+
+   {
+    folder: "produto12",
+    category: "Álbuns",
+    title: "Albun Pro Gaveta",
+    description:
+      "Modelo para 1 Álbum - Com gravação a laser ou placa personalizada Inclusa, Base em Madeira com acabamento inferior e superior revestido , consultar cores",
+    price: "A partir de R$ 180,00",
+  },
+   {
+    folder: "produto13",
+    category: "kit Revelações",
+    title: "Kit Revelações de fotos 10X15",
+    description:
+      `Transforme seus momentos favoritos em memórias reais! 
+      ✨ Não deixe suas fotos esquecidas na galeria do celular. 
+      Com o nosso Kit Revelação de Fotos 10x15, você dá vida às lembranças que merecem ser guardadas com carinho.
+       📸 Escolha o pacote que combina com você:
+        • Kit 10 fotos: R$ 27,90 
+        • Kit 20 fotos: R$ 47,90
+         • Kit 40 fotos: R$ 79,90`,
+         price: "A partir de R$ 180,00",
+  },
+  {
+    folder: "produto13",
+    category: "kit Revelações",
+    title: "Kit Revelações de fotos 15X21",
+    description:
+     `
+Confira nossos pacotes de revelação 15x21:
+
+• Kit 10 fotos: R$ 63,90
+• Kit 20 fotos: R$ 109,90
+• Kit 40 fotos: R$ 189,90
+`,
+    price: "A partir de R$ 180,00",
+  },
+
+  {
+    folder: "produto14",
+    category: "Quadros",
+    title: "Quadros  20x30  + Foto",
+    description:
+    "Quadro 20X30 Acompanha foto",
+    price: "A partir de R$ 59.90",
+  },
+
+   {
+    folder: "produto14",
+    category: "Quadros",
+    title: "Quadros  15x21  + Foto",
+    description:
+    "Quadro 15X21 Acompanha foto",
+    price: "A partir de R$ 49.90",
+  },
+ 
+ 
 
 ];
 
 
 
 export function Products() {
-
+  
 
   const [selectedCategory, setSelectedCategory] =
     useState("Todos");
@@ -91,7 +220,18 @@ export function Products() {
   const [currentImage, setCurrentImage] =
     useState(0);
 
+  function solicitarOrcamento() {
+  if (!selectedProduct) return;
 
+  const mensagem = `Olá, Diovana!
+Vim através do seu site e gostaria de solicitar um orçamento sobre o produto: ${selectedProduct.title}.`;
+
+  const url = `https://api.whatsapp.com/send/?phone=554691321472&text=${encodeURIComponent(
+    mensagem
+  )}&type=phone_number&app_absent=0`;
+
+  window.open(url, "_blank");
+}
 
   const categories = useMemo(() => {
 
@@ -164,6 +304,8 @@ export function Products() {
 
 
   return (
+
+
 
 <section
 id="produtos"
@@ -498,6 +640,7 @@ block
 text-2xl
 text-accent
 mt-5
+text-yellow-800
 ">
 
 {product.price}
@@ -699,6 +842,7 @@ mt-4
 text-muted-foreground
 leading-7
 mt-5
+whitespace-pre-line
 ">
 
 {selectedProduct.description}
@@ -711,6 +855,7 @@ mt-5
 text-4xl
 text-accent
 mt-8
+text-yellow-800
 ">
 
 {selectedProduct.price}
@@ -720,20 +865,21 @@ mt-8
 
 
 <button
-
-className="
-mt-8
-bg-accent
-text-white
-rounded-full
-px-8
-py-3
-"
-
+  onClick={solicitarOrcamento}
+  className="
+    mt-8
+    bg-gray-700
+    hover:bg-gray-800
+    text-white
+    rounded-full
+    px-8
+    py-3
+    transition
+  "
 >
-
-Solicitar orçamento
-
+  Solicitar orçamento sobre o produto:
+  <br />
+  <strong>{selectedProduct.title}</strong>
 </button>
 
 
