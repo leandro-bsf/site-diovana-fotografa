@@ -509,7 +509,8 @@ opacity-80
 <div className="
 grid
 md:grid-cols-2
-gap-8
+p-5
+md:p-8x
 ">
 
 
@@ -694,9 +695,11 @@ setSelectedProduct(null)
 
 <DialogContent
 className="
-max-w-5xl
-p-0
-overflow-hidden
+  w-[95vw]
+    max-w-5xl
+    max-h-[95vh]
+    overflow-y-auto
+    p-0
 "
 >
 
@@ -707,6 +710,7 @@ selectedProduct && (
 
 <div className="
 grid
+grid-cols-1
 md:grid-cols-2
 "
 >
@@ -736,7 +740,9 @@ alt={selectedProduct.title}
 
 className="
 w-full
-h-[600px]
+h-72
+sm:h-96
+md:h-[600px]
 object-contain
 "
 
@@ -756,11 +762,15 @@ onClick={previousImage}
 
 className="
 absolute
-left-4
-bg-white/20
+left-2
+md:left-4
+bg-black/40
+hover:bg-black/60
 text-white
 rounded-full
-p-3
+p-2
+md:p-3
+transition
 "
 
 >
@@ -807,7 +817,9 @@ p-3
 
 
 <div className="
-p-8
+p-5
+p-5
+md:p-8
 flex
 flex-col
 justify-center
