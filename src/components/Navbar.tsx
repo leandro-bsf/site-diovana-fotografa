@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const links = [
-  { href: "/#sobre", label: "Sobre" },
-  { href: "/#portfolio", label: "Portfólio" },
-  { href: "/#avaliacoes", label: "Avaliações" },
-  { href: "/#contato", label: "Contato" },
-  { href: "/produtos", label: "Produtos" },
+  { href: "/#sobre", label: "Sobre", external: true },
+  { href: "/#portfolio", label: "Portfólio", external: true },
+  { href: "/#avaliacoes", label: "Avaliações", external: true },
+  { href: "/#contato", label: "Contato", external: true },
+  { href: "/produtos", label: "Produtos", external: false },
 ];
 
 export function Navbar() {
@@ -43,31 +43,27 @@ export function Navbar() {
 
 
         {/* Menu Desktop */}
-        <ul className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.18em]">
-          {links.map((l) => (
-            <li key={l.href}>
-              <Link
-                to={l.href}
-                className="
-                  relative py-1 
-                  hover:text-accent 
-                  transition-colors 
-                  after:content-[''] 
-                  after:absolute 
-                  after:left-0 
-                  after:bottom-0 
-                  after:h-px 
-                  after:w-0 
-                  after:bg-accent 
-                  after:transition-all 
-                  hover:after:w-full
-                "
-              >
-                {l.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+     <ul className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.18em]">
+  {links.map((l) => (
+    <li key={l.href}>
+      {l.external ? (
+        <a
+          href={l.href}
+          className="relative py-1 hover:text-accent transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-accent after:transition-all hover:after:w-full"
+        >
+          {l.label}
+        </a>
+      ) : (
+        <Link
+          to={l.href}
+          className="relative py-1 hover:text-accent transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-accent after:transition-all hover:after:w-full"
+        >
+          {l.label}
+        </Link>
+      )}
+    </li>
+  ))}
+</ul>
 
 
         {/* Botão Mobile */}

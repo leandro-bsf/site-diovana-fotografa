@@ -40,7 +40,7 @@ const products = [
     title: "Albun Dreambook - Tecido",
     description:
       "Este álbum apresenta capa e estojo revestidos em tecido especial Dream Dourado, acompanhando placa com gravação a laser e sendo composto por até 45 lâminas (equivalentes a 90 páginas) em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão branco entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
-    price: "A partir de R$ 500,00",
+    price: "A partir de R$ 299,00",
   },
 
 
@@ -70,7 +70,7 @@ const products = [
     title: "Caneca Personalizada",
     description:
       "Caneca Porcelana Personalizada 325ml",
-    price: "A partir de R$ 180,00",
+    price: "A partir de R$ 45,00",
   },
   
   {
@@ -79,7 +79,7 @@ const products = [
     title: "Camiseta Personalizada Poliester",
     description:
       "Camiseta Personalizada 100% Poliester , use sua criatividade, presenteie quem você ama!! Camisetas estampadas com Foto : R$ 39,90 Camisetas Somente Texto : R$ 43,00 , Tamanhos para toda a família: Infantil: 4 ao 14 - Adulto: P ao XG",
-    price: "A partir de R$ 180,00",
+    price: "A partir de R$ 59,00",
   },
   
   {
@@ -88,7 +88,7 @@ const products = [
     title: "Banner Pró sem trama",
     description:
       "Banner Pró sem trama ",
-    price: "A partir de R$ 180,00",
+    price: "A partir de R$ 59,00",
   },
   
   {
@@ -97,7 +97,7 @@ const products = [
     title: "Álbum Econômico",
     description:
       "Este modelo possui capa 100% fotográfica com estrutura interna em cartão de 2 mm e é composto por até 18 lâminas (equivalentes a 36 páginas) impressas em papel fotográfico profissional com gramatura de 800g/m², utilizando cartão cinza entre as lâminas e acabamento com laminação em verniz UV brilho ou fosco.",
-    price: "A partir de R$ 180,00",
+    price: "A partir de R$ 99,00",
   },
   
   {
