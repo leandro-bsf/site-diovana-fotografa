@@ -64,23 +64,6 @@ const products = [
   },
 
 
-  {
-    folder: "produto4",
-    category: "Personalizados",
-    title: "Caneca Personalizada",
-    description:
-      "Caneca Porcelana Personalizada 325ml",
-    price: "A partir de R$ 45,00",
-  },
-  
-  {
-    folder: "produto5",
-    category: "Personalizados",
-    title: "Camiseta Personalizada Poliester",
-    description:
-      "Camiseta Personalizada 100% Poliester , use sua criatividade, presenteie quem você ama!! Camisetas estampadas com Foto : R$ 39,90 Camisetas Somente Texto : R$ 43,00 , Tamanhos para toda a família: Infantil: 4 ao 14 - Adulto: P ao XG",
-    price: "A partir de R$ 59,00",
-  },
   
   {
     folder: "produto6",
